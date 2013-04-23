@@ -1,0 +1,33 @@
+{
+    "title": "WebConfig",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "document-root": {
+            "type": "string",
+            "description": "Directory which is available to the public",
+            "required": true
+        },
+        "main": {
+            "type": "string",
+            "description": "Forward all web requests to this file."
+        },
+        "env": {
+            "type": "object",
+            "description": "Additional environment variables to pass to the application.",
+            "additionalProperties": true
+        },
+        "deny": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "description": "Deny access to this file or directory relative to the document root."
+            }
+        },
+        "extra": {
+            "type": "object",
+            "description": "Arbitrary extra data which can be used by config generators or other third parties.",
+            "additionalProperties": true
+        }
+    }
+}
