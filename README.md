@@ -1,5 +1,7 @@
 # Web server agnostic configuration for PHP web applications
 
+Version 0.1
+
 ## Todo:
 
 * Find a better name for the configuration file than the not PHP specific `web.json`.
